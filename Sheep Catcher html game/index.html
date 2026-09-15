@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lauren O'Shea">
+    <title>UI Programming 25</title>
+    <link href="assets/css/screen.css" rel="stylesheet" text="text/css">
+
+
+</head>
+<body>
+
+ 
+    <h1 id="main-header">~WELCOME~ :3</h1>
+<div id = "start-form">
+    <form name="helloForm" method="get" action ="gameplay.html" onsubmit="return validateForm()">
+        USERNAME: <input type="text" name="name">
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+   
+    <div id="modal">
+
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>You seem to have played a session on this device before. <br>Existing local data:</p>
+        <code class="present-saved-data"></code>
+        <button class="saved-data-accept">Yes, use saved username</button><button class="saved-data-refusal">No, start fresh</button>
+      </div>
+            <script type="text/javascript" src="assets/js/in-class-initial.js"></script>
+</div>   
+
+    <div id = "game">   
+      
+      <h1 id="main-header">Find The Sheep Before They Stray Too Far!! </h1>
+      <h2 id = "instructions" >Use The Arrow Keys To Move And Collect The Sheep!!</h2>
+    
+    <section class="wrapper">
+        <canvas id="the_canvas" width="1100" height="500" style ="background-color: black";>
+            Oops! looks like your browser does not support canvas tag
+        </canvas>
+    </section></div>
+
+
+    <script src="assets/js/nipplejs.js"></script>   
+   <script src="assets/js/script.js"></script>
+
+</body>
+</html>
